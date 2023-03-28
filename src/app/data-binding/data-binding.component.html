@@ -1,0 +1,31 @@
+<h2>Interpollatin</h2>
+<p>{{ nome }} has ${{ dollars }}</p>
+<br />
+<hr />
+
+<h2>Property Binding</h2>
+<button [disabled]="checkThings()" (click)="addAge()">
+  PRICE: $10 BUY IT!
+</button>
+
+<br />
+<br />
+<hr />
+
+<h2>Event Binding</h2>
+<button (click)="actualCash(dollars)">SEE MONEY</button>
+<button (click)="addMoreCash()">STOLE $50 DOLLARS</button>
+<br />
+<br />
+<span>agora o do curso kkkkk</span>
+<div
+  (mousemove)="mouseMoveTest($event)"
+  style="background: red; width: 300px; height: 300px"
+></div>
+{{ position.x }} - {{ position.y }}
+
+<br />
+<br />
+<hr />
+<h2>Two-way data binding (banana in a box!)</h2>
+<input [(ngModel)]="nome" /> {{ nome }}
